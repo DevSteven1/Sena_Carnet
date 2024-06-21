@@ -16,7 +16,7 @@ class Carnet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0), // Espacio de relleno alrededor del Card
+      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0), // Espacio de relleno alrededor del Card
       child: Card(
         color: Colors.white,
         shape: RoundedRectangleBorder(

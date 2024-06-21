@@ -5,7 +5,7 @@ import 'package:myapp/components/carnet.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent, // Color de la barra de estado transparente
-    statusBarIconBrightness: Brightness.dark, // Iconos de la barra de estado en color oscuro
+    statusBarIconBrightness: Brightness.light// Iconos de la barra de estado en color oscuro
   ));
   runApp(const MyApp());
 }
