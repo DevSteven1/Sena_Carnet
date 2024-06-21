@@ -22,9 +22,9 @@ class LogoImgAprendiz extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           AspectRatio(
-                            aspectRatio: 1.5, // Relación de aspecto deseada para el logo
+                            aspectRatio: 1.7, // Relación de aspecto deseada para el logo
                             child: Container(
-                              padding: const EdgeInsets.all(3.0),
+                              padding: const EdgeInsets.all(0.0),
                               alignment: Alignment.topLeft,
                               child: Image.network(
                                 "https://seeklogo.com/images/S/SENA_COLOMBIA-logo-056E74F2AE-seeklogo.com.png",
@@ -36,11 +36,11 @@ class LogoImgAprendiz extends StatelessWidget {
                           Expanded(
                             child: Container(
                               alignment: Alignment.bottomLeft,
-                              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 0.0),
                               child:const Text(
                                 "APRENDIZ",
                                 style: TextStyle(
-                                  fontSize: 18.0,
+                                  fontSize: 20.0,
                                   fontWeight: FontWeight.normal,
                                   color: Colors.blue
                                 ),
