@@ -6,7 +6,7 @@ class InfoRegionalAprendiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Expanded(
-      flex: 3, // Flexibilidad de la fila (puede ajustarse según sea necesario)
+      flex: 2, // Flexibilidad de la fila (puede ajustarse según sea necesario)
       child: Row(
         children: [
           Expanded(

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class LogoImgAprendiz extends StatelessWidget {
-  const LogoImgAprendiz({Key? key}) : super(key: key);
+  const LogoImgAprendiz({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 3,
+      flex: 2,
       child: Row(
         children: [
           Expanded(
@@ -14,7 +14,7 @@ class LogoImgAprendiz extends StatelessWidget {
               color: Colors.white,
               elevation: 0.0,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(0.0),
                 child: Row(
                   children: [
                     Expanded(

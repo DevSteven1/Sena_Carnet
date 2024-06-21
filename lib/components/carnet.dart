@@ -27,7 +27,7 @@ class Carnet extends StatelessWidget {
           width: cardWidth,
           height: cardHeight,
           child: const Padding(
-            padding: EdgeInsets.all(10.0), // Espacio de relleno dentro del Card
+            padding: EdgeInsets.all(15.0), // Espacio de relleno dentro del Card
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Espaciado equitativo entre filas
               children: [
