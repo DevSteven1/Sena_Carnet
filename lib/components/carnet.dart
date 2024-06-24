@@ -21,7 +21,7 @@ class Carnet extends StatelessWidget {
         color: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.0),
-          side: const BorderSide(color: Colors.black, width: 1.0), // Borde negro de 1.0 de ancho
+          side: const BorderSide(color: Colors.blue, width: 2.0), // Borde negro de 1.0 de ancho
         ),
         child: SizedBox(
           width: cardWidth,
@@ -31,8 +31,18 @@ class Carnet extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Espaciado equitativo entre filas
               children: [
-                LogoImgAprendiz(),
-                InfoAprendiz(),
+                LogoImgAprendiz(
+                  rol: 'APRENDIZ',
+                  logoUrl:'https://seeklogo.com/images/S/SENA_COLOMBIA-logo-056E74F2AE-seeklogo.com.png',
+                  imagenUrl: 'https://assetsio.gnwcdn.com/Genshin-Impact-Furina-splash-art-1.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp',),
+                InfoAprendiz(
+                  primerNombre: 'CRISTIAN', 
+                  segundoNombre: 'JESUS',
+                  primerApellido: "PERALTA",
+                  segundoApellido: "PEREZ",
+                  cc: "1103858123",
+                  rh:"O+"
+                  ),
                 InfoRegionalAprendiz()
               ],
             ),

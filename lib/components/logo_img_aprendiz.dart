@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 
 class LogoImgAprendiz extends StatelessWidget {
-  const LogoImgAprendiz({super.key});
 
+  final String rol;
+  final String logoUrl;
+  final String imagenUrl;
+
+  const LogoImgAprendiz({
+    required this.rol,
+    required this.logoUrl,
+    required this.imagenUrl,
+    super.key,
+  });
+  
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -27,22 +37,21 @@ class LogoImgAprendiz extends StatelessWidget {
                               padding: const EdgeInsets.all(0.0),
                               alignment: Alignment.topLeft,
                               child: Image.network(
-                                "https://seeklogo.com/images/S/SENA_COLOMBIA-logo-056E74F2AE-seeklogo.com.png",
+                                logoUrl,
                                 fit: BoxFit.contain,
                               ),
                             ),
                           ),
-                          const SizedBox(height: 0.0), // Espacio entre la imagen y el texto
+                          const SizedBox(height: 8.0), // Espacio entre la imagen y el texto
                           Expanded(
                             child: Container(
                               alignment: Alignment.bottomLeft,
-                              padding: const EdgeInsets.symmetric(horizontal: 0.0),
-                              child:const Text(
-                                "APRENDIZ",
-                                style: TextStyle(
+                              child: Text(
+                                rol,
+                                style: const TextStyle(
                                   fontSize: 20.0,
                                   fontWeight: FontWeight.normal,
-                                  color: Colors.blue
+                                  color: Colors.blue,
                                 ),
                               ),
                             ),
@@ -50,11 +59,11 @@ class LogoImgAprendiz extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(width: 0.0), // Espacio entre las dos columnas de imágenes
+                    const SizedBox(width: 8.0), // Espacio entre las dos columnas de imágenes
                     // Columna derecha para la imagen de la derecha
                     Expanded(
                       child: Image.network(
-                        "https://assetsio.gnwcdn.com/Genshin-Impact-Furina-splash-art-1.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+                        imagenUrl,
                         fit: BoxFit.cover,
                       ),
                     ),
